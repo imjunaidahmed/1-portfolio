@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meerub ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Arial, Helvetica, sans-serif;
+  background:linear-gradient(135deg,#ff6a88,#ff99ac,#ffc3a0);
+  overflow:hidden;
+  color:white;
+}.container{ text-align:center; background:rgba(0,0,0,0.35); padding:40px; border-radius:25px; backdrop-filter:blur(10px); box-shadow:0 10px 40px rgba(0,0,0,0.4); max-width:420px; }
+
+h1{ font-size:34px; margin-bottom:10px; }
+
+h2{ font-size:26px; margin-top:10px; }
+
+p{ font-size:18px; line-height:1.5; }
+
+.highlight{ color:#ffd54f; font-weight:bold; }
+
+.buttons{ margin-top:30px; }
+
+button{ border:none; padding:12px 28px; font-size:16px; margin:10px; border-radius:30px; cursor:pointer; transition:0.3s; }
+
+.yes{ background:#00e676; color:black; }
+
+.yes:hover{ transform:scale(1.1); }
+
+.no{ background:#ff1744; color:white; }
+
+.no:hover{ transform:translateX(20px); }
+
+/* floating hearts */ .heart{ position:absolute; width:15px; height:15px; background:red; transform:rotate(45deg); animation:float 8s linear infinite; }
+
+.heart:before, .heart:after{ content:""; position:absolute; width:15px; height:15px; background:red; border-radius:50%; }
+
+.heart:before{top:-8px;left:0} .heart:after{left:-8px;top:0}
+
+@keyframes float{ 0%{transform:translateY(100vh) rotate(45deg);opacity:1} 100%{transform:translateY(-10vh) rotate(45deg);opacity:0} }
+
+/* fireworks */ .firework{ position:absolute; width:6px; height:6px; border-radius:50%; animation:explode 1.5s ease-out infinite; }
+
+@keyframes explode{ 0%{box-shadow:0 0 #fff} 50%{ box-shadow: 0 -60px #fff, 42px -42px #fff, 60px 0 #fff, 42px 42px #fff, 0 60px #fff, -42px 42px #fff, -60px 0 #fff, -42px -42px #fff; } 100%{box-shadow:0 0 transparent} }
+
+</style>
+</head>
+<body><div class="container">
+  <h1>Meerub ❤️</h1>  <p>
+    Meri life mein bohot log aaye,
+    lekin <span class="highlight">tum jaisi koi nahi</span>.
+  </p>  <p>
+    Tum meri zindagi ki sabse khoobsurat wajah ho, jisse dekh kar har din thoda aur special lagta hai.
+  </p>  <h2>
+    Meerub, kya tum mere saath
+    <br>
+    <span class="highlight">Relationship</span> mein aana chahogi? 💫
+  </h2>  <div class="buttons">
+    <button class="yes" onclick="alert('Yay! ❤️ Mujhe pata tha Meerub yes kahegi!')">Yes 💖</button>
+    <button class="no">No 😅</button>
+  </div>
+</div><!-- hearts --><div class="heart" style="left:10%; animation-duration:7s"></div>
+<div class="heart" style="left:30%; animation-duration:9s"></div>
+<div class="heart" style="left:50%; animation-duration:8s"></div>
+<div class="heart" style="left:70%; animation-duration:10s"></div>
+<div class="heart" style="left:85%; animation-duration:6s"></div><!-- fireworks --><div class="firework" style="top:20%; left:20%"></div>
+<div class="firework" style="top:70%; left:70%"></div>
+<div class="firework" style="top:30%; left:80%"></div>
+<div class="firework" style="top:60%; left:10%"></div></body>
+</html>
